@@ -9,17 +9,8 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  subscription_id   = "85c7908d-8028-4894-af5d-1991ee8f0450"
-  client_id         = "8652c37d-012b-4019-9aa5-619dc5425efc"
-  client_secret     = "bqd8Q~wxdA8NVzEAj8Efxngif_3l4sg7exxJqauY"
-  tenant_id         = "37bb0008-2586-4514-a753-d1092d7259f2"
-  features {
-    resource_group {
-       prevent_deletion_if_contains_resources = false
-     }
-  }
-}
+#hidden principal agent details
+
 locals {
   resource_group="app-grp"
   location="North Europe"  
